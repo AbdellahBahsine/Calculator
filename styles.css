@@ -1,0 +1,61 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 2px solid #333;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.calculator .result {
+	height: 60px;
+	width: 340px;
+	border: 1px solid #333;
+	outline: none;
+	padding: 10px;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.operations, .numbers {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.operations button, .numbers button {
+	flex: 1 1 0px;
+	height: 45px;
+	border: 1px solid #333;
+	outline: none;
+	border-radius: 0;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.operations button:hover, .numbers button:hover
+{
+	background-color: darkgray;
+}
+
+.operations button:last-child, .numbers button:last-child {
+	margin-right: 0;
+}
